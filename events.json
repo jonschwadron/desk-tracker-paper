@@ -964,5 +964,81 @@
       ],
       "reason": "leftover in red supply, used M30 4373-4392, no new unused mid hold"
     }
+  },
+  {
+    "ts": "2026-08-17T10:46:11.512407-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "skip",
+      "bid": 4417.26,
+      "supply": [
+        4424.5,
+        4445
+      ],
+      "tickets": [
+        {
+          "id": 102034139,
+          "sl": 4050
+        },
+        {
+          "id": 102177113,
+          "lots": 0.03,
+          "sl": 4389.25,
+          "run": 28.01,
+          "double": 4457
+        }
+      ],
+      "reason": "pulled from supply into FVG 4414-4419; leftover BE; used M30 4373-4392; no new unused mid hold"
+    }
+  },
+  {
+    "ts": "2026-08-17T10:46:13-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4389-4404",
+      "gap_low": 4389.645,
+      "gap_high": 4403.805,
+      "gap_mid": 4396.725,
+      "fill_state": "unused",
+      "late_chase": true,
+      "spot": 4417.53,
+      "overlaps_demand_50": false
+    }
+  },
+  {
+    "ts": "2026-08-17T10:46:13-04:00",
+    "agent": "FVG",
+    "action": "send",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "to": "MACRO",
+      "fvg_id": "fvg-M30-2026-08-17-4389-4404",
+      "not_a_buy": true
+    }
+  },
+  {
+    "ts": "2026-08-17T10:47:37.683459-04:00",
+    "agent": "MACRO",
+    "action": "veto",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "no_chase",
+      "spot": 4417.53,
+      "fvg": {
+        "low": 4389.645,
+        "high": 4403.805,
+        "mid": 4396.725,
+        "role": "profit_area"
+      },
+      "reason": "FVG unused but no unused-box mid overlap; late chase from 4417; leftover already running"
+    }
   }
 ]
