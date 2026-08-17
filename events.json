@@ -727,5 +727,20 @@
       "reason": "overnight wick 4386.94; 50% 4382.5 not tagged; hunt remains return to 4382.5",
       "refuse": "above_proximal"
     }
+  },
+  {
+    "ts": "2026-08-17T08:21:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "lock": "no_fib_tool",
+      "box_mid": 4382.5,
+      "distal": 4373,
+      "proximal": 4392,
+      "reason": "snipe box mid 4382.5 not a dump fib"
+    }
   }
 ]
