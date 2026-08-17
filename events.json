@@ -292,5 +292,440 @@
       "not_a_buy": true,
       "ping_micro": false
     }
+  },
+  {
+    "ts": "2026-08-16T22:25:38-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4375-4388",
+      "gap_low": 4375.43,
+      "gap_high": 4387.61,
+      "gap_mid": 4381.52,
+      "candle2_time": "2026-08-17T00:00",
+      "fill_state": "unused",
+      "late_chase": false,
+      "spot": 4391.14,
+      "locked": true,
+      "visual": "/workspace/desk/fvg/cards/fvg-M30-2026-08-17-4375-4388.png",
+      "demand": {
+        "inside_unused_demand": true,
+        "overlaps_demand_50": true,
+        "demand_tf": "M30",
+        "demand_proximal": 4392,
+        "demand_distal": 4373,
+        "demand_50": 4382.5,
+        "note": "Sits inside unused M30 4373-4392. Mid 4381.52 brackets 50% 4382.5."
+      }
+    }
+  },
+  {
+    "ts": "2026-08-16T22:25:38-04:00",
+    "agent": "FVG",
+    "action": "send",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4375-4388",
+      "to": "MACRO",
+      "gap_low": 4375.43,
+      "gap_high": 4387.61,
+      "gap_mid": 4381.52,
+      "fill_state": "unused",
+      "late_chase": false,
+      "spot": 4391.14,
+      "not_a_buy": true,
+      "ping_micro": false,
+      "overlaps_demand_50": true
+    }
+  },
+  {
+    "ts": "2026-08-17T02:25:00Z",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "agent": "MACRO",
+      "agent_id": "7acb6d1e-f5fc-43a0-8c09-71806c205ae4",
+      "ts_et": "2026-08-16T22:25:00-04:00",
+      "kind": "MAP",
+      "card": "wait",
+      "symbol": "XAUUSD",
+      "tf": "M30",
+      "spot": 4391.135,
+      "fvg": {
+        "tf": "M30",
+        "fvg_low": 4375.43,
+        "fvg_high": 4387.61,
+        "fvg_mid": 4381.52,
+        "impulse": "2026-08-17T00:00:00",
+        "unused": true,
+        "role": "profit_area",
+        "overlap_how": "overlap_50",
+        "overlap_m30_50_4382.5": true,
+        "late_chase": false,
+        "gap_width": 12.18,
+        "spot_above_high": 3.525,
+        "m15": {
+          "low": 4379.6,
+          "high": 4387.61,
+          "contains_50": true
+        },
+        "h4": {
+          "low": 4386.53,
+          "high": 4392.06,
+          "note": "on top of box, above 50%"
+        },
+        "source": "FVG SD Trader OANDA"
+      },
+      "htf_box": {
+        "tf": "M30",
+        "distal": 4373.0,
+        "proximal": 4392.0,
+        "mid_50": 4382.5,
+        "unused": true
+      },
+      "impulse": {
+        "tf": "M30",
+        "note": "FVG impulse 17 Aug 00:00; chart also shows Fri 14 Aug 11:00 leave"
+      },
+      "entry": null,
+      "sl": null,
+      "risk_usd": 160.68,
+      "lots": null,
+      "status": "WAIT",
+      "skip_reason": "best overlap but no 50% return yet; spot at proximal",
+      "refuse": null,
+      "seats": {
+        "macro": true,
+        "fvg": true,
+        "micro": false
+      },
+      "reason": "M30 FVG 4375.43-4387.61 mid 4381.52 overlaps unused demand 50% 4382.5. Ping Micro to snipe a RETURN to 4382.5. No long at 4391.",
+      "picture": "/workspace/macro-desk/fvg-m30-4375-4387-2026-08-16.png",
+      "micro_pinged": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "quiet": true
+    }
+  },
+  {
+    "ts": "2026-08-16T22:26:00-04:00",
+    "agent": "MICRO",
+    "action": "hunt",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "macro_ping": true,
+      "htf_box": {
+        "tf": "M30",
+        "distal": 4373.0,
+        "proximal": 4392.0,
+        "mid": 4382.5,
+        "unused": true
+      },
+      "fvg": {
+        "tf": "M30",
+        "lo": 4375.43,
+        "hi": 4387.61,
+        "mid": 4381.52,
+        "unused": true
+      }
+    }
+  },
+  {
+    "ts": "2026-08-16T22:26:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4391.0,
+      "hunt_mid": 4382.5,
+      "fvg_mid": 4381.52,
+      "sl_if_long": 4363.0,
+      "picture": "/workspace/xauusd-hunt-wait-2026-08-16.png"
+    }
+  },
+  {
+    "ts": "2026-08-16T22:30:16-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4375-4388",
+      "gap_low": 4375.425,
+      "gap_high": 4387.61,
+      "gap_mid": 4381.5175,
+      "fill_state": "unused",
+      "note": "hover lock C1 23:30 H4375.425 C3 00:30 L4387.610"
+    }
+  },
+  {
+    "ts": "2026-08-16T22:30:16-04:00",
+    "agent": "FVG",
+    "action": "invalidate",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4391-4399",
+      "gap_low": 4391.08,
+      "gap_high": 4399.135,
+      "fill_state": "dead"
+    }
+  },
+  {
+    "ts": "2026-08-17T07:45:00-04:00",
+    "agent": "NEWS",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:45:00-04:00",
+      "event": null,
+      "when_et": null,
+      "headline": null,
+      "source": null,
+      "url": null,
+      "correlating": [],
+      "gold_implication": "Stood up 17 Aug 2026 07:43 ET. First scan in flight. No book-moving card yet.",
+      "book_effect": null,
+      "impact": null,
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": true,
+      "routines": [
+        "0 8 * * 1-5",
+        "0 12 * * 1-5"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-17T07:46:00-04:00",
+    "agent": "NEWS",
+    "action": "card",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:46:00-04:00",
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": false,
+      "impact": "book_moving",
+      "event": "HORMUZ",
+      "when_et": "2026-08-17T00:00:00-04:00",
+      "headline": "US–Iran MoU expired today; Hormuz traffic near-zero (0 Sunday vs 31 prior weekend)",
+      "source": "AP/Reuters/CNBC",
+      "url": "https://www.reuters.com/world/middle-east/shipping-via-hormuz-strait-slows-after-tanker-attacks-data-shows-2026-08-16/",
+      "correlating": [
+        "Hormuz",
+        "Iran",
+        "oil"
+      ],
+      "gold_implication": "Deadline was known; gold only grinding ~4400, not ripping. HOLD the runner. No new long on the expiry itself. Escalation (implemented sanctions, shooting restart, dark-fleet zero) is the add trigger.",
+      "book_effect": "hold"
+    }
+  },
+  {
+    "ts": "2026-08-17T07:46:00-04:00",
+    "agent": "NEWS",
+    "action": "card",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:46:00-04:00",
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": false,
+      "impact": "book_moving",
+      "event": "FOMC_MINUTES",
+      "when_et": "2026-08-19T14:00:00-04:00",
+      "headline": "FOMC minutes (28–29 Jul) Wed 19 Aug 2:00 PM ET; meeting held 3.50–3.75%, three hike votes",
+      "source": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+      "correlating": [
+        "Fed",
+        "USD"
+      ],
+      "gold_implication": "Minutes predate 7 Aug NFP and 12 Aug CPI. WAIT / no new long into 2:00 PM ET Wednesday. Do not flatten 102034139 on minutes risk.",
+      "book_effect": "wait"
+    }
+  },
+  {
+    "ts": "2026-08-17T11:45:00Z",
+    "agent": "MACRO",
+    "action": "news",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "agent": "MACRO",
+      "agent_id": "7acb6d1e-f5fc-43a0-8c09-71806c205ae4",
+      "ts_et": "2026-08-17T07:45:00-04:00",
+      "kind": "NEWS",
+      "card": "wait",
+      "symbol": "XAUUSD",
+      "tf": "D1",
+      "spot": 4400,
+      "status": "WAIT",
+      "book_effect": "hold",
+      "events": [
+        {
+          "event": "US-Iran MoU expired",
+          "when_et": "2026-08-17",
+          "impact": "Hormuz still choked; gold grinding not ripping",
+          "source": "AP/Al Jazeera"
+        },
+        {
+          "event": "FOMC minutes",
+          "when_et": "2026-08-19T14:00:00-04:00",
+          "impact": "July 28-29 meeting; 9-3 hold; hawkish dissent",
+          "source": "federalreserve.gov"
+        }
+      ],
+      "no_cpi_pce_nfp_this_week": true,
+      "new_long": false,
+      "flatten": false,
+      "reason": "HOLD 102034139 / SL 4050. No new long into Wed 2pm FOMC minutes. Hormuz expiry already in the tape.",
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "quiet": false
+    }
+  },
+  {
+    "ts": "2026-08-17T07:57:36-04:00",
+    "agent": "FVG",
+    "action": "fill",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4375-4388",
+      "fill_state": "partial",
+      "partial_low": 4386.94,
+      "fifty_tagged": false
+    }
+  },
+  {
+    "ts": "2026-08-17T07:57:36-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "H1",
+    "payload": {
+      "fvg_id": "fvg-H1-2026-08-17-4386-4392",
+      "gap_low": 4386.345,
+      "gap_high": 4392.055,
+      "gap_mid": 4389.2,
+      "fill_state": "partial",
+      "late_chase": true,
+      "spot": 4403.5
+    }
+  },
+  {
+    "ts": "2026-08-17T07:57:36-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "H4",
+    "payload": {
+      "fvg_id": "fvg-H4-2026-08-17-4386-4388",
+      "gap_low": 4386.53,
+      "gap_high": 4388.285,
+      "gap_mid": 4387.41,
+      "fill_state": "partial",
+      "late_chase": true,
+      "spot": 4403.5
+    }
+  },
+  {
+    "ts": "2026-08-17T07:57:36-04:00",
+    "agent": "FVG",
+    "action": "send",
+    "symbol": "XAUUSD",
+    "tf": "H1",
+    "payload": {
+      "to": "MACRO",
+      "note": "M30 partial + H1/H4 partials, late chase"
+    }
+  },
+  {
+    "ts": "2026-08-17T08:00:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "overnight_wick": 4386.94,
+      "mid_tagged": false,
+      "htf_box": {
+        "tf": "M30",
+        "distal": 4373.0,
+        "proximal": 4392.0,
+        "mid": 4382.5,
+        "unused": true
+      },
+      "fvg_remnant": {
+        "tf": "M30",
+        "lo": 4375.425,
+        "hi": 4386.94,
+        "mid": 4381.18,
+        "unused": true
+      },
+      "spot_note": "do not snipe 4403 or H1/H4 partials above mid",
+      "reason": "overnight wick 4386.94; 50% 4382.5 not tagged; hunt remains return to 4382.5",
+      "refuse": "above_proximal"
+    }
   }
 ]
