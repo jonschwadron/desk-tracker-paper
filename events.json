@@ -905,5 +905,64 @@
       "stood_down": true,
       "do_not_touch": 4050
     }
+  },
+  {
+    "ts": "2026-08-17T10:26:59.551548-04:00",
+    "agent": "MACRO",
+    "action": "half_tp",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "closed_ticket": 102175407,
+      "closed_lots": 0.03,
+      "left_ticket": 102177113,
+      "left_lots": 0.03,
+      "open": 4389.25,
+      "fill_bid": 4424.0,
+      "balance_after": 5461.98,
+      "note": "half at +1R past 4415"
+    }
+  },
+  {
+    "ts": "2026-08-17T10:26:59.551548-04:00",
+    "agent": "MACRO",
+    "action": "runner",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "ticket": 102177113,
+      "lots": 0.03,
+      "open": 4389.25,
+      "sl": 4389.25,
+      "note": "leftover BE, do not flatten"
+    }
+  },
+  {
+    "ts": "2026-08-17T10:34:34.508199-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "skip",
+      "bid": 4424.12,
+      "supply": [
+        4425,
+        4448
+      ],
+      "tickets": [
+        {
+          "id": 102034139,
+          "sl": 4050
+        },
+        {
+          "id": 102177113,
+          "lots": 0.03,
+          "sl": 4389.25,
+          "double": 4457
+        }
+      ],
+      "reason": "leftover in red supply, used M30 4373-4392, no new unused mid hold"
+    }
   }
 ]
