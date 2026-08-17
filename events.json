@@ -883,5 +883,27 @@
       "score_at": "09:30 ET close",
       "note": "do not untag; 4403/4396 was wrong bar"
     }
+  },
+  {
+    "ts": "2026-08-17T09:30:00-04:00",
+    "agent": "MICRO",
+    "action": "entry",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "long",
+      "filled_by": "Desk",
+      "lots": 0.06,
+      "sl": 4363,
+      "entry_note": "9:30 hold, wick ~4382 close 4387",
+      "half_1R": 4412,
+      "box": {
+        "distal": 4373,
+        "proximal": 4392,
+        "mid": 4382.5
+      },
+      "stood_down": true,
+      "do_not_touch": 4050
+    }
   }
 ]
