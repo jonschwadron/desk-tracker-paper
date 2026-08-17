@@ -742,5 +742,27 @@
       "proximal": 4392,
       "reason": "snipe box mid 4382.5 not a dump fib"
     }
+  },
+  {
+    "ts": "2026-08-17T08:30:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4387.39,
+      "htf_box": {
+        "distal": 4373,
+        "proximal": 4392,
+        "mid": 4382.5,
+        "unused": true
+      },
+      "fvg_high": 4387.55,
+      "mid_tagged": false,
+      "reason": "back inside box; sitting on FVG high; wait hold at 4382.5",
+      "sl_if_long": 4363,
+      "risk_usd": 160.68
+    }
   }
 ]
