@@ -1121,5 +1121,48 @@
       },
       "reason": "chase / no scalp"
     }
+  },
+  {
+    "ts": "2026-08-17T11:32:16.798483-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "skip",
+      "bid": 4423.67,
+      "tickets": [
+        {
+          "id": 102034139,
+          "sl": 4050
+        },
+        {
+          "id": 102177113,
+          "lots": 0.03,
+          "sl": 4389.25,
+          "run": 34.42,
+          "double": 4457
+        }
+      ],
+      "reason": "into supply 4425-4445; leftover BE not doubled; FVG 4389-4404 chase; no unused mid hold; Micro wait"
+    }
+  },
+  {
+    "ts": "2026-08-17T11:32:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4424.1,
+      "fvg": {
+        "lo": 4389.645,
+        "hi": 4403.805,
+        "mid": 4396.725
+      },
+      "chase_cap": 4417.97,
+      "reason": "still late chase; no mid hold"
+    }
   }
 ]
