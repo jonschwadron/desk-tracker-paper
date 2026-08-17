@@ -1,0 +1,296 @@
+[
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "feed_analysis": "TradingView OANDA/FXCM",
+      "feed_tape": "Dukascopy XAUUSD BID",
+      "last_d1_bar": "2026-08-14",
+      "o": 4355.855,
+      "h": 4396.765,
+      "l": 4310.375,
+      "c": 4374.205,
+      "spot_sunday_mt4": "~4400-4409",
+      "status": "WAIT",
+      "note": "weekend; last file bar Friday. No Sunday D1 invented."
+    }
+  },
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "box",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "side": "demand",
+      "freshness": "unused",
+      "distal": 4373,
+      "proximal": 4392,
+      "mid_50": 4382.5,
+      "source": "Jonathan drew 16 Aug",
+      "spot": "above box",
+      "status": "WAIT",
+      "refuse": "do not chase 4407; more than one box-width above proximal"
+    }
+  },
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "box",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "side": "demand",
+      "freshness": "unused",
+      "label": "4224-4304",
+      "distal": 4223.225,
+      "proximal": 4303.745,
+      "mid_50": 4263.485,
+      "origin_bar": "2026-08-06",
+      "origin_ohlc": {
+        "o": 4277.985,
+        "h": 4303.745,
+        "l": 4223.225,
+        "c": 4251.925
+      },
+      "first_tap": false,
+      "dead": false,
+      "post_away_min_l": 4310.375,
+      "miss_proximal": 6.63,
+      "note": "still unused; Friday low missed proximal by ~6"
+    }
+  },
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "box",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "side": "demand",
+      "freshness": "used_hold",
+      "label": "June/July runner box",
+      "his_box": {
+        "distal": 3850,
+        "proximal": 4250,
+        "mid_50": 4061.9
+      },
+      "tape_box": {
+        "distal": 3941.528,
+        "proximal": 4202.905,
+        "mid_50": 4072.2165
+      },
+      "note": "his 3850-4250 is approximate; tape swing is 3941.528-4202.905. Ticket is the hold."
+    }
+  },
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "runner",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "ticket": 102034139,
+      "account": "5217539",
+      "server": "Coinexx-Demo",
+      "type": "buy",
+      "lots": 0.05,
+      "started_lots": 0.1,
+      "open_price": 4043.95,
+      "sl": 4050,
+      "tp": null,
+      "state": "lottery_ticket",
+      "half_taken": true,
+      "do_not_move_sl": true,
+      "do_not_flatten": true,
+      "next_half": "only if leftover doubles; then size 0.025; leave SL 4050",
+      "size_off_balance": 5355.93,
+      "risk_usd_new_fills": 160.68,
+      "risk_pct": 3,
+      "risk_pct_cap": 4
+    }
+  },
+  {
+    "ts": "2026-08-16T22:03:00-04:00",
+    "agent": "MACRO",
+    "action": "card",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "status": "WAIT",
+      "skip_reason": "price above unused M30 box; no 50% return",
+      "spot": "~4400-4409",
+      "box": {
+        "distal": 4373,
+        "proximal": 4392,
+        "mid_50": 4382.5
+      },
+      "seats": {
+        "macro": false,
+        "fvg": false,
+        "micro": false
+      },
+      "new_long": false
+    }
+  },
+  {
+    "ts": "2026-08-16T21:35:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4400.9,
+      "htf_box": {
+        "tf": "M30",
+        "distal": 4373.0,
+        "proximal": 4392.0,
+        "mid": 4382.5,
+        "unused": true
+      },
+      "ltf_nest": null,
+      "entry": null,
+      "sl": null,
+      "risk_usd": 160.68,
+      "lots": null,
+      "reason": "Sunday; spot above proximal; no 50% hold; no MACRO hunt ping",
+      "refuse": "above_proximal",
+      "picture": "/workspace/xauusd-wait-2026-08-16.png",
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-17T02:04:30Z",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "agent": "MACRO",
+      "agent_id": "7acb6d1e-f5fc-43a0-8c09-71806c205ae4",
+      "ts_et": "2026-08-16T22:04:30-04:00",
+      "kind": "MAP",
+      "card": "wait",
+      "symbol": "XAUUSD",
+      "tf": "D1",
+      "spot": 4394.74,
+      "fvg": {
+        "tf": "D1",
+        "fvg_low": 4106.475,
+        "fvg_high": 4223.505,
+        "fvg_mid": 4164.99,
+        "impulse": "2026-08-05",
+        "unused": true,
+        "role": "profit_area",
+        "overlap_how": "none_vs_live_50",
+        "overlap_runner_box": "partial_3942_4203",
+        "overlap_d1_50_4061.90": false,
+        "overlap_m30_50_4382.5": false,
+        "overlap_unused_d1_4224_4304_50": false,
+        "late_chase": true,
+        "gap_width": 117.03,
+        "spot_above_high": 171.235,
+        "source": "FVG SD Trader OANDA"
+      },
+      "htf_box": {
+        "tf": "M30",
+        "distal": 4373.0,
+        "proximal": 4392.0,
+        "mid_50": 4382.5,
+        "unused": true
+      },
+      "unused_d1": {
+        "distal": 4223.225,
+        "proximal": 4303.745,
+        "mid_50": 4263.485,
+        "unused": true
+      },
+      "impulse": null,
+      "entry": null,
+      "sl": null,
+      "risk_usd": 160.68,
+      "lots": null,
+      "status": "WAIT",
+      "skip_reason": "FVG unused but no overlap of live 50%; spot 171 above FVG high",
+      "refuse": "late_chase",
+      "seats": {
+        "macro": false,
+        "fvg": true,
+        "micro": false
+      },
+      "reason": "D1 FVG 4106.475-4223.505 is a profit area. Do not buy. Do not ping Micro until price returns to unused 50% (M30 4382.5 or D1 4263.5).",
+      "picture": "/workspace/macro-desk/fvg-d1-4106-4223-2026-08-16.png",
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "quiet": true
+    }
+  },
+  {
+    "ts": "2026-08-16T21:53:00-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "fvg_id": "fvg-D1-2026-08-05-4106-4224",
+      "gap_low": 4106.475,
+      "gap_high": 4223.505,
+      "gap_mid": 4164.99,
+      "candle1_time": "2026-08-04",
+      "candle2_time": "2026-08-05",
+      "candle3_time": "2026-08-06",
+      "fill_state": "unused",
+      "late_chase": true,
+      "spot": 4394.74,
+      "locked": true,
+      "visual": "/workspace/desk/fvg/cards/fvg-D1-2026-08-05-4106-4224.png",
+      "demand": {
+        "inside_unused_demand": true,
+        "overlaps_demand_50": false,
+        "demand_tf": "D1",
+        "demand_distal": 3942,
+        "demand_proximal": 4203,
+        "demand_50": 4061.9
+      },
+      "note": "Unused D1 bullish FVG. Profit area, not a buy. No overlap of live M30 50% 4382.5."
+    }
+  },
+  {
+    "ts": "2026-08-16T22:04:00-04:00",
+    "agent": "FVG",
+    "action": "send",
+    "symbol": "XAUUSD",
+    "tf": "D1",
+    "payload": {
+      "fvg_id": "fvg-D1-2026-08-05-4106-4224",
+      "to": "MACRO",
+      "gap_low": 4106.475,
+      "gap_high": 4223.505,
+      "gap_mid": 4164.99,
+      "fill_state": "unused",
+      "late_chase": true,
+      "spot": 4394.74,
+      "not_a_buy": true,
+      "ping_micro": false
+    }
+  }
+]
