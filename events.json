@@ -548,7 +548,7 @@
       "impact": "book_moving",
       "event": "HORMUZ",
       "when_et": "2026-08-17T00:00:00-04:00",
-      "headline": "US–Iran MoU expired today; Hormuz traffic near-zero (0 Sunday vs 31 prior weekend)",
+      "headline": "US\u2013Iran MoU expired today; Hormuz traffic near-zero (0 Sunday vs 31 prior weekend)",
       "source": "AP/Reuters/CNBC",
       "url": "https://www.reuters.com/world/middle-east/shipping-via-hormuz-strait-slows-after-tanker-attacks-data-shows-2026-08-16/",
       "correlating": [
@@ -585,7 +585,7 @@
       "impact": "book_moving",
       "event": "FOMC_MINUTES",
       "when_et": "2026-08-19T14:00:00-04:00",
-      "headline": "FOMC minutes (28–29 Jul) Wed 19 Aug 2:00 PM ET; meeting held 3.50–3.75%, three hike votes",
+      "headline": "FOMC minutes (28\u201329 Jul) Wed 19 Aug 2:00 PM ET; meeting held 3.50\u20133.75%, three hike votes",
       "source": "Federal Reserve Board",
       "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
       "correlating": [
@@ -833,6 +833,55 @@
       "close_through_fvg": false,
       "close_through_distal": false,
       "reason": "M5 closed under mid; no rejection"
+    }
+  },
+  {
+    "ts": "2026-08-17T08:56:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4385.16,
+      "wick_low": 4377,
+      "mid": 4382.5,
+      "bar": "unclosed",
+      "score_at": "09:00 ET close"
+    }
+  },
+  {
+    "ts": "2026-08-17T09:00:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "bar": "08:30-09:00 ET",
+      "o": 4403.65,
+      "h": 4404.98,
+      "l": 4395.46,
+      "c": 4396.75,
+      "mid": 4382.5,
+      "mid_tagged": false,
+      "reason": "close above box, no mid test",
+      "forming_low": 4381.995
+    }
+  },
+  {
+    "ts": "2026-08-17T09:10:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "mid_tagged": true,
+      "mid": 4382.5,
+      "bar": "09:00-09:30 unclosed",
+      "score_at": "09:30 ET close",
+      "note": "do not untag; 4403/4396 was wrong bar"
     }
   }
 ]
