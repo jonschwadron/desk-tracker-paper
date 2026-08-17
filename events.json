@@ -1164,5 +1164,34 @@
       "chase_cap": 4417.97,
       "reason": "still late chase; no mid hold"
     }
+  },
+  {
+    "ts": "2026-08-17T11:44:17-04:00",
+    "agent": "FVG",
+    "action": "find",
+    "symbol": "XAUUSD",
+    "tf": "H1",
+    "payload": {
+      "fvg_id": "fvg-H1-2026-08-17-4398-4404",
+      "gap_low": 4398.82,
+      "gap_high": 4403.805,
+      "gap_mid": 4401.3125,
+      "fill_state": "unused",
+      "late_chase": true,
+      "spot": 4420.9,
+      "overlaps_demand_50": false,
+      "nest_of": "fvg-M30-2026-08-17-4389-4404"
+    }
+  },
+  {
+    "ts": "2026-08-17T11:44:17-04:00",
+    "agent": "FVG",
+    "action": "send",
+    "symbol": "XAUUSD",
+    "tf": "H1",
+    "payload": {
+      "to": "MACRO",
+      "fvg_id": "fvg-H1-2026-08-17-4398-4404"
+    }
   }
 ]
