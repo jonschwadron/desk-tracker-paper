@@ -1040,5 +1040,86 @@
       },
       "reason": "FVG unused but no unused-box mid overlap; late chase from 4417; leftover already running"
     }
+  },
+  {
+    "ts": "2026-08-17T11:02:59.545196-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "skip",
+      "bid": 4417.62,
+      "tickets": [
+        {
+          "id": 102034139,
+          "sl": 4050
+        },
+        {
+          "id": 102177113,
+          "lots": 0.03,
+          "sl": 4389.25,
+          "run": 28.37,
+          "double": 4457
+        }
+      ],
+      "reason": "still in FVG 4414-4418 under supply 4424-4446; leftover BE; no unused mid hold; no chase"
+    }
+  },
+  {
+    "ts": "2026-08-17T11:18:57.035276-04:00",
+    "agent": "MACRO",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "skip",
+      "bid": 4419.91,
+      "tickets": [
+        {
+          "id": 102034139,
+          "sl": 4050
+        },
+        {
+          "id": 102177113,
+          "lots": 0.03,
+          "sl": 4389.25,
+          "run": 30.66,
+          "double": 4457
+        }
+      ],
+      "reason": "under supply 4428-4448; leftover BE; FVG 4389-4404 still chase; no unused mid hold; no Micro FVG scalp card"
+    }
+  },
+  {
+    "ts": "2026-08-17T11:19:00-04:00",
+    "agent": "MICRO",
+    "action": "miss",
+    "symbol": "XAUUSD",
+    "tf": "M15",
+    "payload": {
+      "card": "wait",
+      "spot": 4421.5,
+      "unused_fvg": {
+        "tf": "M15",
+        "lo": 4392.105,
+        "hi": 4403.805,
+        "mid": 4397.955,
+        "widths_above": 1.5
+      },
+      "near_fvg": {
+        "tf": "M15",
+        "lo": 4412.845,
+        "hi": 4416.545,
+        "mid": 4414.695,
+        "state": "partial"
+      },
+      "m30": {
+        "lo": 4389.645,
+        "hi": 4403.805,
+        "mid": 4396.725
+      },
+      "reason": "chase / no scalp"
+    }
   }
 ]
