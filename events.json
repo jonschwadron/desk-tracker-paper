@@ -764,5 +764,75 @@
       "sl_if_long": 4363,
       "risk_usd": 160.68
     }
+  },
+  {
+    "ts": "2026-08-17T08:43:43-04:00",
+    "agent": "FVG",
+    "action": "fill",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "fvg_id": "fvg-M30-2026-08-17-4375-4388",
+      "fill_state": "partial",
+      "partial_low": 4379.265,
+      "fifty_tagged": true,
+      "spot": 4381.1,
+      "dead": false
+    }
+  },
+  {
+    "ts": "2026-08-17T08:44:00-04:00",
+    "agent": "MICRO",
+    "action": "confirm",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "mid_tagged": true,
+      "mid": 4382.5,
+      "spot": 4380,
+      "note": "slice-through under mid, not a hold"
+    }
+  },
+  {
+    "ts": "2026-08-17T08:44:00-04:00",
+    "agent": "MICRO",
+    "action": "watch",
+    "symbol": "XAUUSD",
+    "tf": "M30",
+    "payload": {
+      "card": "wait",
+      "spot": 4380,
+      "htf_box": {
+        "distal": 4373,
+        "proximal": 4392,
+        "mid": 4382.5
+      },
+      "fvg_partial_low": 4379.265,
+      "close_through_4375.425": false,
+      "reason": "tagged mid, no hold, Monday no fill",
+      "sl_if_long": 4363
+    }
+  },
+  {
+    "ts": "2026-08-17T08:47:00-04:00",
+    "agent": "MICRO",
+    "action": "miss",
+    "symbol": "XAUUSD",
+    "tf": "M5",
+    "payload": {
+      "card": "wait",
+      "spot": 4379.3,
+      "mid": 4382.5,
+      "m5_1235": {
+        "o": 4388.95,
+        "h": 4389.395,
+        "l": 4381.295,
+        "c": 4381.48
+      },
+      "hold": false,
+      "close_through_fvg": false,
+      "close_through_distal": false,
+      "reason": "M5 closed under mid; no rejection"
+    }
   }
 ]
